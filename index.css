@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#mainDiv {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#input {
+  flex-direction: column;
+  gap: 2vh;
+}
+#input,
+#outputDiv,
+#selectAttribute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#input,
+#outputDiv {
+  height: 20vh;
+}
+#selectAttribute {
+  height: 60vh;
+  gap: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+#input,
+#selectAttribute {
+  border-bottom: 1px solid white;
+}
+#input input {
+  width: 70vw;
+  height: 9vh;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0px 0px 7px white;
+  font-size: 5vh;
+  padding: 2vh 2vh;
+  transition: 0.7s;
+}
+#input input:focus-within {
+  box-shadow: 5px 5px 15px white;
+}
+#output {
+  font-size: 6vh;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px white;
+  z-index: 99;
+}
+#selectAttribute button {
+  width: 25vh;
+  height: 7vh;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  transition: 0.7s;
+  font-size: 4vh;
+  box-shadow: 0px 0px 4px white;
+  text-shadow: 0px 0px 3px white;
+}
+#selectAttribute button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 4px 4px 4px white;
+  border-color: black;
+  cursor: pointer;
+}
+#forAt {
+  width: 200px;
+  height: 120px;
+  position: absolute;
+  top: 40vh;
+  left: 43vw;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: black;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+#forAt input {
+  width: 10vw;
+  height: 5vh;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  padding: 0px 1vw 0px 1vw;
+  box-shadow: 1px 1px 4px white;
+  transition: 0.7s;
+}
+#forAt input:focus-within {
+  box-shadow: 2px 2px 6px white;
+}
+#forAt button {
+  width: 10vh;
+  height: 4vh;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  transition: 0.7s;
+  font-size: 2vh;
+  box-shadow: 0px 0px 4px white;
+  text-shadow: 0px 0px 3px white;
+}
+#forAt button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 2px white;
+  border-color: black;
+  cursor: pointer;
+}
+#forAt_2 {
+  width: 180px;
+  height: 120px;
+  position: absolute;
+  top: 40vh;
+  left: 43vw;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: black;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+#forAt_2 #forAt_2_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+#forAt_2 input {
+  width: 10vw;
+  height: 5vh;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  padding: 0px 1vw 0px 1vw;
+  box-shadow: 1px 1px 4px white;
+  transition: 0.7s;
+}
+#forAt_2 input:focus-within {
+  box-shadow: 2px 2px 6px white;
+}
+#forAt_2 button {
+  width: 10vh;
+  height: 4vh;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  transition: 0.7s;
+  font-size: 2vh;
+  box-shadow: 0px 0px 4px white;
+  text-shadow: 0px 0px 3px white;
+}
+#forAt_2 button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 2px white;
+  border-color: black;
+  cursor: pointer;
+}
+#forAt_bg {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  opacity: 0.6;
+}
